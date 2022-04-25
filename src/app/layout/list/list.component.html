@@ -1,0 +1,13 @@
+<button (click)="setMode('rows')">
+  Show Rows
+</button>
+<button (click)="setMode('cards')">
+  Show Cards
+</button>
+
+<ng-container [ngTemplateOutlet]="rowsTemplate" *ngIf="isMode('rows')">
+</ng-container>
+
+<ng-container [ngTemplateOutlet]="cardsTemplate" *ngIf="isMode('cards')">
+</ng-container>
+

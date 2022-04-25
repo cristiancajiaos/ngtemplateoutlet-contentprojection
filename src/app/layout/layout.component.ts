@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LayoutComponent implements OnInit {
 
   collection = ['Foo', 'Bar', 'Baz'];
-  
+  showList = true;
+
   constructor() { }
 
   ngOnInit(): void {

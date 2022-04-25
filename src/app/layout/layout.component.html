@@ -1,1 +1,9 @@
-<p>layout works!</p>
+<app-list [collection]="collection" *ngIf="showList">
+  <ng-template #rowsTemplate>
+    <p>Rows Template</p>
+  </ng-template>
+
+  <ng-template #cardsTemplate>
+    <p>Cards Template</p>
+  </ng-template>
+</app-list>
