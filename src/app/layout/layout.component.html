@@ -1,9 +1,11 @@
 <app-list [collection]="collection" *ngIf="showList">
   <ng-template #rowsTemplate>
-    <p>Rows Template</p>
+    <app-row *ngFor="let item of collection" [item]="item">
+    </app-row>
   </ng-template>
 
   <ng-template #cardsTemplate>
-    <p>Cards Template</p>
+    <app-card *ngFor="let item of collection" [item]="item">
+    </app-card>
   </ng-template>
 </app-list>
